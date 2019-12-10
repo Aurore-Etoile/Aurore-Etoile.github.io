@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Aurore">
+
+
+
+    <meta name="description" content="Je suis Aurore! ">
+
+
+    <meta name="keywords" content="code">
+
+
+<title>2019-12-10 | Aurore&#39;s Blog</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Aurore&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Aurore&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">2019-12-10</h1>
+            
+            <div class="post-meta">
+                
+                Author: <a itemprop="author" rel="author" href="/">Aurore</a>&ensp;
+                
+
+                
+                <span class="post-time">
+                    Date: <a
+                        href="#">December 10, 2019&nbsp;&nbsp;14:06:35</a>
+                </span>&ensp;
+                
+                
+                <span class="post-category">
+                    Category:
+                    
+                    <a href="/categories/%E4%BB%A3%E7%A0%81%E6%97%A5%E5%B8%B8/">代码日常</a>
+                    
+                </span>
+                
+            </div>
+            
+        </header>
+
+        <div class="post-content">
+            <p>读取文件的时候遇到了字符串编码格式的问题：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">		<span class="keyword">try</span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">			FileReader a=<span class="keyword">new</span> FileReader(<span class="string">"D:/mytest.txt"</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">			BufferedReader b=<span class="keyword">new</span> BufferedReader(a);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">			<span class="keyword">while</span>((OneLine=b.readLine())!=<span class="keyword">null</span>) &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">				count++;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">				System.out.println(OneLine);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">			&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">			System.out.println(<span class="string">"\n 共读取了"</span>+count+<span class="string">"行"</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">			b.close();</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">		&#125; <span class="keyword">catch</span>(IOException io) &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">			System.out.println(<span class="string">"出错了！"</span>+io);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">		&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//寮犱笁</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//鏉庡洓</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//共读取了2行</span></span></pre></td></tr></table></figure>
+
+<p>Java使用Unicode为默认编码（通常使用的数据库及文件都是基于 GB2312 编码的），这里要改成UTF-8</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">String s=<span class="keyword">new</span> String(OneLine.getBytes(), <span class="string">"UTF-8"</span>);</span></pre></td></tr></table></figure>
+
+<p>更简单的方法是，直接把Eclipse的项目的字符编码设为utf-8就好了！</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/205830/1575965009900-9f2378c7-e18b-49d2-aa4e-2d8d8d5fc157.png#align=left&display=inline&height=637&name=%E6%8D%95%E8%8E%B7.PNG&originHeight=637&originWidth=1135&size=42118&status=done&style=none&width=1135" alt="捕获.PNG"></p>
+<p>同时读取文件有个细节</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//姓名：张三，电话号码：，地址：保定</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//姓名：李四，电话号码：，地址：石家庄</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">System.out.println(s.length());</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//18</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//18</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//姓名：张三，电话号码：，地址：保定</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//姓名：李四，电话号码：，地址：</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">System.out.println(s.length());</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//18</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//16</span></span></pre></td></tr></table></figure>
+
+<p>附上一个详细的讲解：<a href="https://www.ibm.com/developerworks/cn/java/java_chinese/index.html" target="_blank" rel="noopener">Java 编程技术中汉字问题的分析及解决</a></p>
+
+        </div>
+
+        
+        <section class="post-copyright">
+            
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>Aurore</span>
+            </p>
+            
+            
+            
+            
+            <p class="copyright-item">
+                <span>Slogan:</span>
+                <span>他山之石，可以攻玉</span>
+            </p>
+            
+
+        </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag：</span>
+                <span class="tag">
+                    
+                    
+                    <a href="/tags/Java/"> Java</a>
+                    
+                    
+                </span><br>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();" target="_blank" rel="noopener">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="/2019/12/10/%E5%8D%81%E4%B8%AA%E6%9C%80%E5%9F%BA%E7%A1%80%E7%9A%84%E6%B3%95%E8%AF%AD%E5%8A%A8%E8%AF%8D%E5%8F%98%E4%BD%8D/">十个最基础的法语动词变位</a>
+            
+        </section>
+
+
+    </article>
+</div>
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Aurore | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>
