@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Aurore">
+
+
+
+    <meta name="description" content="Je suis Aurore! ">
+
+
+    <meta name="keywords" content="code">
+
+
+<title>La semaine, les mois et les saisons | Aurore&#39;s Blog</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Aurore&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Aurore&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+    <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">La semaine, les mois et les saisons</h1>
+            
+            <div class="post-meta">
+                
+                Author: <a itemprop="author" rel="author" href="/">Aurore</a>&ensp;
+                
+
+                
+                <span class="post-time">
+                    Date: <a
+                        href="#">December 19, 2019&nbsp;&nbsp;21:01:58</a>
+                </span>&ensp;
+                
+                
+                <span class="post-category">
+                    Category:
+                    
+                    <a href="/categories/les-notes-de-francais/">les notes de français</a>
+                    
+                </span>
+                
+            </div>
+            
+        </header>
+
+        <div class="post-content">
+            <!doctype html>
+<div class="lake-content-editor-core lake-engine" data-lake-element="root" data-selection-205830="%7B%22path%22%3A%5B%5D%2C%22uuid%22%3A%22205830%22%2C%22active%22%3Atrue%7D">
+  <h1 id="GnlH6" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 28px; line-height: 36px;">La semaine</h1>
+  <ol start="1" lake-indent="0" style="list-style-type: decimal; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li>le lundi&nbsp;</li>
+    <li>le mardi</li>
+    <li>le mercredi</li>
+    <li>le jeudi</li>
+    <li>le vendredi</li>
+    <li>le samedi</li>
+    <li>le dimanche</li>
+  </ol>
+  <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+  <ol start="1" lake-indent="0" style="list-style-type: decimal; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li>Il y a sept jours dans une semaine.&nbsp; &nbsp; 一周有七天。</li>
+    <li>trois fois par semaine&nbsp; &nbsp;&nbsp;每周三次</li>
+    <li>la semaine précédente&nbsp; &nbsp;&nbsp;上个星期</li>
+    <li>la semaine prochaine&nbsp; &nbsp; 下个星期</li>
+    <li>Dimanche est le dernier jour de la semaine.&nbsp; &nbsp; 星期天是一周的最后一天。</li>
+    <li>J'aurai un examen lundi prochain.&nbsp; &nbsp; 我下周一有考试。</li>
+    <li>Le mardi, Pierre rentre très tard à la maison.&nbsp; &nbsp; 每周二，皮埃尔都很晚。</li>
+    <li>Ce mercredi, c' est mon anniversaire!&nbsp; &nbsp; 这周三是我生日</li>
+    <li>Je vais voir. Ça vous convient jeudi prochain?&nbsp; &nbsp; 我来看看，下星期四您看合适吗？</li>
+    <li>Je peux venir tous les jours, sauf vendredi.&nbsp; &nbsp; 我除了星期五都能来。</li>
+    <li>Tous les samedis soirs ;je vais au cinéma.&nbsp; &nbsp; 每周六晚我都去看电影。</li>
+    <li>Pas de problème, et dimanche soir prochain?&nbsp; &nbsp; 没问题，下星期日晚上怎么样？</li>
+  </ol>
+  <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+  <h1 id="rLVip" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 28px; line-height: 36px;">Les mois</h1>
+  <ol start="1" lake-indent="0" style="list-style-type: decimal; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li>janvier &nbsp; n.m. 一月</li>
+    <li>février &nbsp; n.m. 二月</li>
+    <li>mars &nbsp; n.m. 三月</li>
+    <li>avril &nbsp; n.m. 四月</li>
+    <li>mai &nbsp; n.m. 五月</li>
+    <li>juin &nbsp; n.m. 六月</li>
+    <li>juillet &nbsp; n.m. 七月</li>
+    <li>août &nbsp; n.m. 八月</li>
+    <li>septem<span style="color: rgb(114, 46, 209);">bre</span>&nbsp; &nbsp; n.m. 九月</li>
+    <li>octo<span style="color: #722ED1;">bre</span> &nbsp; n.m. 十月</li>
+    <li>novem<span style="color: #722ED1;">bre &nbsp;</span> n.m. 十一月</li>
+    <li>décem<span style="color: #722ED1;">bre</span> &nbsp; n.m. 十二月</li>
+  </ol>
+  <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+  <ol start="1" lake-indent="0" style="list-style-type: decimal; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li>ce mois-ci&nbsp; &nbsp;&nbsp;这个月</li>
+    <li>le mois dernier&nbsp; &nbsp;&nbsp;上个月</li>
+    <li>le mois suivant&nbsp; &nbsp;&nbsp;下个月</li>
+    <li>un mois auparavant&nbsp; &nbsp;&nbsp;一个月以前</li>
+    <li>le onze du mois&nbsp; &nbsp;&nbsp;这月的十一日</li>
+    <li>au mois de / en septembre&nbsp; &nbsp;&nbsp;在九月</li>
+    <li>une période d'un mois&nbsp; &nbsp;&nbsp;一个月的时间</li>
+    <li>Le mois de janvier est le début de nouvel an.&nbsp; &nbsp; 一月是新年的开端。</li>
+    <li>Quelle date est-ce aujourd'hui, s'il vous plait? Le onze février.&nbsp; &nbsp; 请问今天几号？ 二月十一号。</li>
+    <li>En mars, le temps est souvent changeant.&nbsp; &nbsp; 三月份的天气多变。</li>
+    <li>En avril, c'est le printemps.&nbsp; &nbsp; 四月时节，正是春天。</li>
+    <li>Le premier Mai est la fête des travailleurs depuis 1889.&nbsp; &nbsp; 自1889年起，五月一号就成了劳动节。</li>
+    <li>Nous sommes le six juin.&nbsp; &nbsp; 今天是六月六日。</li>
+    <li>Vous partez quand ? – Le 21 juillet.&nbsp; &nbsp; 您什么时候出发？ 七月21号。</li>
+    <li>Les vacances scolaires finissent fin août.&nbsp; &nbsp; 学校假期在八月底结束。</li>
+    <li>Nous sommes en septembre.&nbsp; &nbsp; 现在是九月份。</li>
+    <li>La Révolution d'Octobre a secoué le monde entier.&nbsp; &nbsp; 十月革命震撼了全世界。</li>
+    <li>Chaque 11 du mois de novembre, on célèbre la fin de la Première Guerre mondiale.&nbsp; &nbsp; 每年11月11日，人们庆祝第一次世界大战结束。</li>
+    <li>Le douzième mois de l'année est décembre.&nbsp; &nbsp; 一年中的第十二个月是十二月。</li>
+  </ol>
+  <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+  <h1 id="gZDEO" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 28px; line-height: 36px;">Les saisons</h1>
+  <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+  <ol start="1" lake-indent="0" style="list-style-type: decimal; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li>printemps&nbsp; &nbsp; n.m. 春，春季，春天</li>
+    <li>été &nbsp; n.m. 夏，夏季，夏天</li>
+    <li>automne &nbsp; n.m. 秋，秋天，秋季</li>
+    <li>hiver &nbsp; n.m. 冬，冬季，冬天；寒冬</li>
+  </ol>
+  <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+  <ol start="1" lake-indent="0" style="list-style-type: decimal; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li><span>En avril, c'est le printemps.&nbsp; &nbsp; 四月时节，正是春天。</span></li>
+    <li>En été, il y a beaucoup de gens sur la plage.&nbsp; &nbsp; 夏天，海边有很多人。</li>
+    <li>Les feuilles tombent en automne.&nbsp; &nbsp; 叶子在秋天凋落。</li>
+    <li>Je n'aime pas l'hiver ni l'été.&nbsp; &nbsp; 我既不喜欢冬天，也不喜欢夏天。</li>
+  </ol>
+</div>
+        </div>
+
+        
+        <section class="post-copyright">
+            
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>Aurore</span>
+            </p>
+            
+            
+            
+            
+            <p class="copyright-item">
+                <span>Slogan:</span>
+                <span>他山之石，可以攻玉</span>
+            </p>
+            
+
+        </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag：</span>
+                <span class="tag">
+                    
+                    
+                    <a href="/tags/J-aime-le-francais-le-francais-m-aime/"> J'aime le français, le français m'aime</a>
+                    
+                    <a href="/tags/%E8%8B%A6%E9%80%BC%E7%9A%84%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/"> 苦逼的期末复习</a>
+                    
+                    
+                </span><br>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();" target="_blank" rel="noopener">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="/2019/12/19/vue%E7%AC%94%E8%AE%B0-1/">vue笔记 1</a>
+            
+        </section>
+
+
+    </article>
+</div>
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Aurore | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>
