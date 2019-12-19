@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Aurore">
+
+
+
+    <meta name="description" content="Je suis Aurore! ">
+
+
+    <meta name="keywords" content="code">
+
+
+<title>LECON VINGT-SEPT | Aurore&#39;s Blog</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Aurore&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Aurore&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+    <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">LECON VINGT-SEPT</h1>
+            
+            <div class="post-meta">
+                
+                Author: <a itemprop="author" rel="author" href="/">Aurore</a>&ensp;
+                
+
+                
+                <span class="post-time">
+                    Date: <a
+                        href="#">December 19, 2019&nbsp;&nbsp;18:15:36</a>
+                </span>&ensp;
+                
+                
+                <span class="post-category">
+                    Category:
+                    
+                    <a href="/categories/%E7%AE%80%E6%98%8E%E6%B3%95%E8%AF%AD%E6%95%99%E7%A8%8B/">简明法语教程</a>
+                    
+                </span>
+                
+            </div>
+            
+        </header>
+
+        <div class="post-content">
+            <!doctype html>
+<div class="lake-content-editor-core lake-engine" data-lake-element="root" data-selection-205830="%7B%22path%22%3A%5B%5B49%2C0%2C0%2C0%2C15%5D%2C%5B49%2C0%2C0%2C0%2C15%5D%5D%2C%22uuid%22%3A%22205830%22%2C%22active%22%3Atrue%7D">
+  <h1 id="oyICD" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 28px; line-height: 36px;">LEXIQUE</h1>
+  <ol start="1" lake-indent="0" style="list-style-type: decimal; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">la capitale</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">le centre&nbsp; &nbsp;&nbsp;</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">politique&nbsp; &nbsp;&nbsp;</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">économique&nbsp; &nbsp;&nbsp;</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">cultuel</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">étranger, ère&nbsp; &nbsp;&nbsp;</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">le reste</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">connaître</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">touriste</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">entier, ère&nbsp; &nbsp; adj.</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">l'entier&nbsp; &nbsp; n.m</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">attirer</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">le trésor</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">accumuler</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">près de</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">l'époque&nbsp; &nbsp; n.f.</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">trouver</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">se trouver</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">plein</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">en plein</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">milieu</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">quatier</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">à cause de</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">magnifuque</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">le souvenir</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">historique</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">l'histoire</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">la perspective</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">à tout heure</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">promeneur, se</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">amuser</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">amusant</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">l'amusement&nbsp; &nbsp; n.m</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">feuilleter</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">l'occasion&nbsp; &nbsp; n.f.</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">offrir</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">curieux, euse</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">dominer</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">le bout</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">le vitrail</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">le quai</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">un livre d'occasion</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">le palais</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">la justice</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">la cour</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">remonter</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">s'installer</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">s'amuser</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">construire</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">s'élever</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">cher, ère</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">au pied de</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">ce jour là</span></li>
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">naître</span></li>
+  </ol>
+  <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+  <h1 id="LcPmJ" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 28px; line-height: 36px;">TEXT</h1>
+  <ol start="1" lake-indent="0" style="list-style-type: decimal; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li><span class="lake-fontsize-14" style="color: rgb(245, 34, 45); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">Les touristes du monde entier</span><span class="lake-fontsize-14" style="color: rgb(0, 0, 0); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px"> </span><span class="lake-fontsize-14" style="color: rgb(245, 34, 45); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">sont attirés</span><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;"> à Paris</span><span class="lake-fontsize-14" style="color: rgb(0, 0, 0); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">&nbsp;</span><span class="lake-fontsize-14" style="color: rgb(0, 0, 0); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">par </span><span class="lake-fontsize-14" style="color: rgb(47, 84, 235); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">les trésors</span><span class="lake-fontsize-14" style="color: rgb(24, 144, 255); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">&nbsp;</span><span class="lake-fontsize-14" style="color: rgb(0, 0, 0); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">que </span><span class="lake-fontsize-14" style="color: rgb(19, 194, 194); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">la ville a accumulés pendant près de deux mille ans</span><span class="lake-fontsize-14" style="color: rgb(0, 0, 0); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">.</span></li>
+  </ol>
+  <ol lake-indent="1" style="list-style-type: none; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <ol lake-indent="0" style="list-style-type: lower-alpha; margin: 0px; padding-left: 23px;">
+      <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">depuis: 从过去</span><span class="lake-fontsize-14" style="color: rgb(245, 34, 45); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">直到现在</span><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">持续发生的事(自从)&nbsp;</span></li>
+      <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">Pentant：叙述某事</span><span class="lake-fontsize-14" style="color: rgb(245, 34, 45); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">从头到尾</span><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">所需时间，也可用於</span><span class="lake-fontsize-14" style="color: rgb(245, 34, 45); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">"在同一时间"&nbsp;</span></li>
+      <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">pour：限指未来的一段时间，相当与pendant的某种用法</span></li>
+      <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">il y a：只能用於</span><span class="lake-fontsize-14" style="color: rgb(245, 34, 45); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">过去已完成之事</span><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">且一定要有</span><span class="lake-fontsize-14" style="color: rgb(245, 34, 45); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">时间副词紧跟著</span></li>
+      <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">dans：指某动作将</span><span class="lake-fontsize-14" style="color: rgb(245, 34, 45); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">紧接著</span><span class="lake-fontsize-14" style="color: rgb(0, 0, 0); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">未来</span><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">的一段时间发生</span></li>
+      <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">attirer qch.</span></li>
+    </ol>
+  </ol>
+  <ol start="2" lake-indent="0" style="list-style-type: decimal; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">L'histoire de Paris remonte au deuxième siècle avant Jésus-Christ, époque où des pêcheurs se sont installés sur l'</span><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">île de la Cité.</span></li>
+  </ol>
+  <ol lake-indent="1" style="list-style-type: none; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <ol lake-indent="0" style="list-style-type: lower-alpha; margin: 0px; padding-left: 23px;">
+      <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">remonter à：追溯到</span></li>
+      <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">avant表示</span><span class="lake-fontsize-14" style="color: rgb(245, 34, 45); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">与时间有关</span><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">的顺序，或者抵达某一个地点的时间，可以和表达时间的名词、代词连用。</span></li>
+    </ol>
+  </ol>
+  <ol lake-indent="2" style="list-style-type: none; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <ol lake-indent="1" style="list-style-type: none; margin: 0px; padding-left: 23px;">
+      <ol lake-indent="0" style="list-style-type: lower-roman; margin: 0px; padding-left: 23px;">
+        <li><span class="lake-fontsize-14" style="color: rgb(51, 51, 51); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">avant midi&nbsp; &nbsp;&nbsp; 中午前</span></li>
+        <li><span class="lake-fontsize-14" style="color: rgb(51, 51, 51); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">avant l'examen &nbsp; &nbsp;&nbsp;考试之前</span></li>
+        <li><span class="lake-fontsize-14" style="color: rgb(51, 51, 51); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">Je me suis arrêté avant le carrefour&nbsp; &nbsp; &nbsp;我在十字路口前停下了。</span></li>
+        <li><span class="lake-fontsize-14" style="color: rgb(51, 51, 51); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">Il est parti avant moi</span><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">&nbsp; &nbsp; &nbsp;</span><span class="lake-fontsize-14" style="color: rgb(51, 51, 51); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">他在我之前离开了。</span></li>
+      </ol>
+    </ol>
+  </ol>
+  <ol lake-indent="1" style="list-style-type: none; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <ol start="3" lake-indent="0" style="list-style-type: lower-alpha; margin: 0px; padding-left: 23px;">
+      <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">avant还可以连接de+inf.</span></li>
+      <li><span class="lake-fontsize-14" style="color: rgb(51, 51, 51); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">devant 表达一种</span><span class="lake-fontsize-14" style="color: rgb(245, 34, 45); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">有关地点或者方位</span><span class="lake-fontsize-14" style="color: rgb(51, 51, 51); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">的概念，不管是具体的还是抽象的。类似于英语中的in front of，只能与名词和代词连用。</span></li>
+    </ol>
+  </ol>
+  <ol lake-indent="2" style="list-style-type: none; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <ol lake-indent="1" style="list-style-type: none; margin: 0px; padding-left: 23px;">
+      <ol lake-indent="0" style="list-style-type: lower-roman; margin: 0px; padding-left: 23px;">
+        <li><span class="lake-fontsize-14" style="color: rgb(51, 51, 51); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">devant la voiture&nbsp; &nbsp; &nbsp;</span><span class="lake-fontsize-14" style="color: rgb(51, 51, 51); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">在车子前</span></li>
+        <li><span class="lake-fontsize-14" style="color: rgb(51, 51, 51); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">devant les juges&nbsp; &nbsp; &nbsp;在法官面前</span></li>
+        <li><span class="lake-fontsize-14" style="color: rgb(51, 51, 51); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">devant le danger&nbsp; &nbsp; &nbsp;</span><span class="lake-fontsize-14" style="color: rgb(51, 51, 51); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">在危险面前</span></li>
+        <li><span class="lake-fontsize-14" style="color: rgb(51, 51, 51); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">Il est devant toi&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</span><span class="lake-fontsize-14" style="color: rgb(51, 51, 51); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">他在你前面</span></li>
+      </ol>
+    </ol>
+  </ol>
+  <ol lake-indent="1" style="list-style-type: none; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <ol start="5" lake-indent="0" style="list-style-type: lower-alpha; margin: 0px; padding-left: 23px;">
+      <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">où可引导地点状语和时间状语</span></li>
+    </ol>
+  </ol>
+  <ol start="3" lake-indent="0" style="list-style-type: decimal; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">L'</span><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">île de la Cité se trouve au milieu de la Seine, en plein centre de la ville.</span></li>
+  </ol>
+  <ol lake-indent="1" style="list-style-type: none; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <ol lake-indent="0" style="list-style-type: lower-alpha; margin: 0px; padding-left: 23px;">
+      <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">se trouver：位于</span></li>
+      <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">au milieu de：在......的中心（时间、空间）</span></li>
+      <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">en plein + nom：在......的中间，正好是</span></li>
+    </ol>
+  </ol>
+  <ol lake-indent="2" style="list-style-type: none; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <ol lake-indent="1" style="list-style-type: none; margin: 0px; padding-left: 23px;">
+      <ol lake-indent="0" style="list-style-type: lower-roman; margin: 0px; padding-left: 23px;">
+        <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">en plein ét</span><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">é&nbsp; &nbsp; 盛夏</span></li>
+      </ol>
+    </ol>
+  </ol>
+  <ol lake-indent="1" style="list-style-type: none; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <ol start="4" lake-indent="0" style="list-style-type: lower-alpha; margin: 0px; padding-left: 23px;">
+      <li><span class="lake-fontsize-14" style="color: rgb(51, 51, 51); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">centre多指事物的中心位置：centre-ville市中心，milieu多指程度：au milieu de la classe 初中班级的中游。</span></li>
+    </ol>
+  </ol>
+  <ol start="4" lake-indent="0" style="list-style-type: decimal; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li><span class="lake-fontsize-14" style="color: rgb(247, 89, 171); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">A toute heure</span><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">, il y a des promeneurs qui 《font les quais》 et </span><span class="lake-fontsize-14" style="color: rgb(247, 89, 171); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">s'amusent à</span><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;"> feuilleter les livres d'occasion que les bouquinistess offrent aux curieux.</span></li>
+  </ol>
+  <ol lake-indent="1" style="list-style-type: none; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <ol lake-indent="0" style="list-style-type: lower-alpha; margin: 0px; padding-left: 23px;">
+      <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">occasion&nbsp;机会, 时机</span></li>
+    </ol>
+  </ol>
+  <ol lake-indent="2" style="list-style-type: none; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <ol lake-indent="1" style="list-style-type: none; margin: 0px; padding-left: 23px;">
+      <ol lake-indent="0" style="list-style-type: lower-roman; margin: 0px; padding-left: 23px;">
+        <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">profiter de l'occasion pour利用机会, 乘机</span></li>
+        <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">laisser passer une occasion 错过一次机会</span></li>
+        <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">sauter sur l'occasion 〈口语〉一下子抓住机会</span></li>
+        <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">prendre l'occasion aux cheveux抓住时机</span></li>
+      </ol>
+    </ol>
+  </ol>
+  <ol lake-indent="1" style="list-style-type: none; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <ol start="2" lake-indent="0" style="list-style-type: lower-alpha; margin: 0px; padding-left: 23px;">
+      <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">便宜;便宜货, 廉价品;旧货</span></li>
+    </ol>
+  </ol>
+  <ol lake-indent="2" style="list-style-type: none; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <ol lake-indent="1" style="list-style-type: none; margin: 0px; padding-left: 23px;">
+      <ol lake-indent="0" style="list-style-type: lower-roman; margin: 0px; padding-left: 23px;">
+        <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">d'occasion 〈旧语，旧义〉廉价地, 便宜地3 旧的, 用过的, 二手的</span></li>
+        <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">le marché de l'occasion 〈引申义〉旧货市场</span></li>
+        <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">magasin qui fait l'occasion 出售旧货的商店</span></li>
+      </ol>
+    </ol>
+  </ol>
+  <ol lake-indent="1" style="list-style-type: none; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <ol start="3" lake-indent="0" style="list-style-type: lower-alpha; margin: 0px; padding-left: 23px;">
+      <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">理由, 原因, 起因</span></li>
+    </ol>
+  </ol>
+  <ol lake-indent="2" style="list-style-type: none; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <ol lake-indent="1" style="list-style-type: none; margin: 0px; padding-left: 23px;">
+      <ol lake-indent="0" style="list-style-type: lower-roman; margin: 0px; padding-left: 23px;">
+        <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">occasion de dispute口角的原因</span></li>
+        <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">Je n'aurai aucune occasion de mettre en doute la vérité des faits.我将没有任何理由怀疑这些事实的真实性。</span></li>
+      </ol>
+    </ol>
+  </ol>
+  <ol lake-indent="1" style="list-style-type: none; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <ol start="4" lake-indent="0" style="list-style-type: lower-alpha; margin: 0px; padding-left: 23px;">
+      <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">时节, 场合, 情况</span></li>
+    </ol>
+  </ol>
+  <ol lake-indent="2" style="list-style-type: none; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <ol lake-indent="1" style="list-style-type: none; margin: 0px; padding-left: 23px;">
+      <ol lake-indent="0" style="list-style-type: lower-roman; margin: 0px; padding-left: 23px;">
+        <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">en toute occasion 在任何情况下, 处处, 时时</span></li>
+        <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">par occasion 偶然, 间或, 有时</span></li>
+        <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">d'occasion 偶然的, 偶然机会造成的</span></li>
+      </ol>
+    </ol>
+  </ol>
+  <ol start="5" lake-indent="0" style="list-style-type: decimal; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">A l'autre bout de l</span><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">'</span><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">île se trouve le Palais de Justice.</span></li>
+  </ol>
+  <ol lake-indent="1" style="list-style-type: none; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <ol lake-indent="0" style="list-style-type: lower-alpha; margin: 0px; padding-left: 23px;">
+      <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">l'autre bout de...：...的另一端</span></li>
+      <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">un autre, une autre, d'autres</span></li>
+      <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">l'autre, les autres</span></li>
+      <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">d'autres, des autres</span></li>
+      <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">d'autres</span></li>
+    </ol>
+  </ol>
+  <p style="padding-left: 2em; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+  <h1 id="9QZUW" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 28px; line-height: 36px;">CONJUGAISON</h1>
+  <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+  <div data-card-type="block" data-lake-card="table" id="iKGMl">
+    <table class="lake-table" style="width: 480.667px; outline: none; border-collapse: collapse;">
+      <colgroup>
+        <col width="240" span="1">
+        <col width="240" span="1">
+      </colgroup>
+      <tbody>
+        <tr style="height: 33px;">
+          <td rowspan="1" colspan="2" style="text-align: center; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;"><span>naître（être né）</span></span></p>
+          </td>
+        </tr>
+        <tr style="height: 33px;">
+          <td style="text-align: center; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">je nais&nbsp;</span></p>
+          </td>
+          <td style="text-align: center; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">nous naissons</span></p>
+          </td>
+        </tr>
+        <tr style="height: 33px;">
+          <td style="text-align: center; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">tu nais</span></p>
+          </td>
+          <td style="text-align: center; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">vous naissez</span></p>
+          </td>
+        </tr>
+        <tr style="height: 33px;">
+          <td colspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">il na</span><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;"><span>ît</span><span><br></span></span></p>
+          </td>
+          <td colspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">ils naissent</span></p>
+          </td>
+        </tr>
+        <tr style="height: 33px;">
+          <td colspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">elle na</span><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;"><span>ît</span></span></p>
+          </td>
+          <td colspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">elles naissent</span></p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+  <div data-card-type="block" data-lake-card="table" id="G34TG">
+    <table class="lake-table" style="width: 720.667px; outline: none; border-collapse: collapse;">
+      <colgroup>
+        <col width="240" span="1">
+        <col width="240" span="1">
+        <col width="240" span="1">
+      </colgroup>
+      <tbody>
+        <tr style="height: 33px;">
+          <td rowspan="1" colspan="2" style="text-align: center; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">conna</span><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;"><span>ître（avoir connu)</span></span></p>
+          </td>
+          <td rowspan="5" colspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;"></span></p>
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;"></span></p>
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><span class="lake-fontsize-14" style="color: rgb(68, 68, 68); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">méconnaître</span></p>
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><span class="lake-fontsize-14" style="color: rgb(68, 68, 68); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">reconnaître</span></p>
+          </td>
+        </tr>
+        <tr style="height: 33px;">
+          <td style="text-align: center; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">je connais</span></p>
+          </td>
+          <td style="text-align: center; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">nous connaissons</span></p>
+          </td>
+        </tr>
+        <tr style="height: 33px;">
+          <td style="text-align: center; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">tu connais</span></p>
+          </td>
+          <td style="text-align: center; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">vous connaissez</span></p>
+          </td>
+        </tr>
+        <tr style="height: 33px;">
+          <td colspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">il conn</span><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;"><span>aît</span></span></p>
+          </td>
+          <td colspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">ils connaissent</span></p>
+          </td>
+        </tr>
+        <tr style="height: 33px;">
+          <td colspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">elle conn</span><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;"><span>aît</span></span></p>
+          </td>
+          <td colspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">elles connaissent</span></p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+  <div data-card-type="block" data-lake-card="table" id="UiIhE">
+    <table class="lake-table" style="width: 720.667px; outline: none; border-collapse: collapse;">
+      <colgroup>
+        <col width="240" span="1">
+        <col width="240" span="1">
+        <col width="240" span="1">
+      </colgroup>
+      <tbody>
+        <tr style="height: 33px;">
+          <td rowspan="1" colspan="2" style="text-align: center; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><span class="lake-fontsize-14" style="color: rgb(68, 68, 68); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px"><span>paraître（avoir/être paru）</span></span></p>
+          </td>
+          <td rowspan="5" colspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><span class="lake-fontsize-14" style="color: rgb(245, 34, 45); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">ap</span><span class="lake-fontsize-14" style="color: rgb(68, 68, 68); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">paraître</span></p>
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><span class="lake-fontsize-14" style="color: rgb(245, 34, 45); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">com</span><span class="lake-fontsize-14" style="color: rgb(68, 68, 68); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">paraître</span></p>
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><span class="lake-fontsize-14" style="color: rgb(245, 34, 45); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px"><span>dis</span></span><span class="lake-fontsize-14" style="color: rgb(68, 68, 68); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px"><span>paraître</span></span></p>
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><span class="lake-fontsize-14" style="color: rgb(245, 34, 45); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px"><span>re</span></span><span class="lake-fontsize-14" style="color: rgb(68, 68, 68); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px"><span>paraître</span></span></p>
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><span class="lake-fontsize-14" style="color: rgb(245, 34, 45); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">réap</span><span class="lake-fontsize-14" style="color: rgb(68, 68, 68); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">paraître</span></p>
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><span class="lake-fontsize-14" style="color: rgb(245, 34, 45); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">recom</span><span class="lake-fontsize-14" style="color: rgb(68, 68, 68); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">paraître</span></p>
+          </td>
+        </tr>
+        <tr style="height: 33px;">
+          <td style="text-align: center; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">je parais</span></p>
+          </td>
+          <td style="text-align: center; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">nous paraissons</span></p>
+          </td>
+        </tr>
+        <tr style="height: 33px;">
+          <td style="text-align: center; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">tu parais</span></p>
+          </td>
+          <td style="text-align: center; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">vous paraissez</span></p>
+          </td>
+        </tr>
+        <tr style="height: 33px;">
+          <td colspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">il&nbsp;</span><span class="lake-fontsize-14" style="color: rgb(68, 68, 68); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px"><span>paraît</span><span><br></span></span></p>
+          </td>
+          <td colspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">ils paraissent</span></p>
+          </td>
+        </tr>
+        <tr style="height: 33px;">
+          <td colspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">elle&nbsp;</span><span class="lake-fontsize-14" style="color: rgb(68, 68, 68); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px"><span>paraît</span></span></p>
+          </td>
+          <td colspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">elles&nbsp;</span><span class="lake-fontsize-14" style="color: rgb(68, 68, 68); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px"><span>paraissent</span></span></p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+  <h1 id="Mb2fh" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 28px; line-height: 36px;"><span style="color: #444444;">EXERCICE</span></h1>
+  <ol start="1" lake-indent="0" style="list-style-type: decimal; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">北京是中华人民共和国的首都，它是全国政治和文化的中心。</span></li>
+  </ol>
+  <ol lake-indent="1" style="list-style-type: none; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <ol lake-indent="0" style="list-style-type: lower-alpha; margin: 0px; padding-left: 23px;">
+      <li><span class="lake-fontsize-14" style="color: rgb(68, 68, 68); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">Pékin est la capitale de la Chine. C'est le centre politique et cultuel du pays.</span></li>
+    </ol>
+  </ol>
+  <ol start="2" lake-indent="0" style="list-style-type: decimal; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">天安门是北京的中心，在天安门广场的中央矗立着人民英雄纪念碑。</span></li>
+  </ol>
+  <ol lake-indent="1" style="list-style-type: none; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <ol lake-indent="0" style="list-style-type: lower-alpha; margin: 0px; padding-left: 23px;">
+      <li><span class="lake-fontsize-14" style="color: rgb(68, 68, 68); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">Tian An Men </span><span style="text-decoration: line-through;"><span class="lake-fontsize-14" style="color: rgb(89, 126, 247); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">se trouve</span></span><span style="text-decoration: line-through;"><span class="lake-fontsize-14" style="color: rgb(89, 126, 247); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px"> en plein centre de</span></span><span class="lake-fontsize-14" style="color: rgb(68, 68, 68); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">&nbsp;</span><span class="lake-fontsize-14" style="color: rgb(68, 68, 68); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px"><span>Pékin. </span></span><span style="text-decoration: line-through;"><span class="lake-fontsize-14" style="color: rgb(89, 126, 247); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px"><span>Au milieu de</span></span></span><span class="lake-fontsize-14" style="color: rgb(68, 68, 68); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px"><span>&nbsp;</span></span><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">la Place Tian'anmen </span><span style="text-decoration: line-through;"><span class="lake-fontsize-14" style="color: rgb(89, 126, 247); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">s'élève</span></span><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;"> le&nbsp;</span><span class="lake-fontsize-14" style="color: rgb(68, 68, 68); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">Monument aux Héros du peuple</span></li>
+      <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">La place Tian An Men </span><span class="lake-fontsize-14" style="color: rgb(245, 34, 45); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">est le centre de</span><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;"> Beijing, </span><span class="lake-fontsize-14" style="color: rgb(245, 34, 45); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">au centre de</span><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;"> la place </span><span class="lake-fontsize-14" style="color: rgb(245, 34, 45); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">se dresse</span><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;"> le monument aux&nbsp;</span><span class="lake-fontsize-14" style="color: rgb(68, 68, 68); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px"><span>Héros du peuple.</span></span></li>
+    </ol>
+  </ol>
+  <ol start="3" lake-indent="0" style="list-style-type: decimal; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">您看到的那座建筑是人民大会堂，它建于1958年。</span></li>
+  </ol>
+  <ol lake-indent="1" style="list-style-type: none; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <ol lake-indent="0" style="list-style-type: lower-alpha; margin: 0px; padding-left: 23px;">
+      <li><span style="text-decoration: line-through;"><span class="lake-fontsize-14" style="color: rgb(47, 84, 235); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">La construction</span></span><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;"> que vous voyez est&nbsp;</span><span class="lake-fontsize-14" style="color: rgb(68, 68, 68); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">le Palais de l'Assemblée Populaire National </span><span style="text-decoration: line-through;"><span class="lake-fontsize-14" style="color: rgb(47, 84, 235); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">et on a construite</span></span><span class="lake-fontsize-14" style="color: rgb(68, 68, 68); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px"> en 1958.</span></li>
+      <li><span style="color: rgb(0, 0, 0); font-size: 19px; line-height: 27px;" class="lake-fontsize-14" data-mce-style="font-size: 14px">Le monument que vous voyez est le Palais de l'Assemblée du Peuple, </span><span style="color: rgb(245, 34, 45); font-size: 19px; line-height: 27px;" class="lake-fontsize-14" data-mce-style="font-size: 14px">il a été construit</span><span style="color: rgb(0, 0, 0); font-size: 19px; line-height: 27px;" class="lake-fontsize-14" data-mce-style="font-size: 14px"> en 1958.​</span></li>
+    </ol>
+  </ol>
+  <ol start="4" lake-indent="0" style="list-style-type: decimal; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">王府井是人们去得最多的大街，那儿有许多商店。</span></li>
+  </ol>
+  <ol lake-indent="1" style="list-style-type: none; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <ol lake-indent="0" style="list-style-type: lower-alpha; margin: 0px; padding-left: 23px;">
+      <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">Wangfujing est le plus fréquenté par les touristes à cause d'il y a beaucoup de magasins.</span></li>
+      <li><span style="color: rgb(0, 0, 0); font-size: 19px; line-height: 27px;" class="lake-fontsize-14" data-mce-style="font-size: 14px">Wang Fu Jing où il y a beaucoup de magasins est la rue la plus fréquentée.</span></li>
+    </ol>
+  </ol>
+  <ol start="5" lake-indent="0" style="list-style-type: decimal; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">每年有许多外国游客来北京。他们参观故宫，颐和园，天坛并到长城上去散步。</span></li>
+  </ol>
+  <ol lake-indent="1" style="list-style-type: none; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <ol lake-indent="0" style="list-style-type: lower-alpha; margin: 0px; padding-left: 23px;">
+      <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">B</span><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">eaucoup de touristes étrangers sont attirés à&nbsp;</span><span class="lake-fontsize-14" style="color: rgb(68, 68, 68); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px"><span>Pékin </span></span><span style="text-decoration: line-through;"><span class="lake-fontsize-14" style="color: rgb(47, 84, 235); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px"><span>par an</span></span></span><span class="lake-fontsize-14" style="color: rgb(68, 68, 68); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px"><span>. Ils visitent le Palais Imérial, le Palais d'Eté, le Temp du le Ciel et promenent sur la Grande Muraille.</span></span></li>
+      <li><span style="color: rgb(0, 0, 0); font-size: 19px; line-height: 27px;" class="lake-fontsize-14" data-mce-style="font-size: 14px">Chaque année, beaucoup de touristes étrangers viennent à Beijing pour visiter le Palais Impérial, le Palais d'Et</span><span class="lake-fontsize-14" style="color: rgb(68, 68, 68); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px"><span>é</span></span><span style="color: rgb(0, 0, 0); font-size: 19px; line-height: 27px;" class="lake-fontsize-14" data-mce-style="font-size: 14px">, le Temple du Ciel et pour </span><span style="color: rgb(245, 34, 45); font-size: 19px; line-height: 27px;" class="lake-fontsize-14" data-mce-style="font-size: 14px">se promener</span><span style="color: rgb(0, 0, 0); font-size: 19px; line-height: 27px;" class="lake-fontsize-14" data-mce-style="font-size: 14px"> sur la Grande Muraille.</span></li>
+    </ol>
+  </ol>
+  <ol start="6" lake-indent="0" style="list-style-type: decimal; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">您将要去参观的工厂位于北京南部。</span></li>
+  </ol>
+  <ol lake-indent="1" style="list-style-type: none; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <ol lake-indent="0" style="list-style-type: lower-alpha; margin: 0px; padding-left: 23px;">
+      <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">L'usine vous allez visiter se trouver dans le sud de&nbsp;</span><span class="lake-fontsize-14" style="color: rgb(68, 68, 68); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px"><span>Pékin.</span></span></li>
+      <li><span style="color: rgb(0, 0, 0); font-size: 19px; line-height: 27px;" class="lake-fontsize-14" data-mce-style="font-size: 14px">L'usine que vous allez visiter se trouve dans le sud de Beijing.</span></li>
+    </ol>
+  </ol>
+  <ol start="7" lake-indent="0" style="list-style-type: decimal; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">昨天我看的那本小说是巴金写的。</span></li>
+  </ol>
+  <ol lake-indent="1" style="list-style-type: none; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <ol lake-indent="0" style="list-style-type: lower-alpha; margin: 0px; padding-left: 23px;">
+      <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">Le roman j'ai vu est écrit par Ba'jin.</span></li>
+      <li><span style="color: rgb(0, 0, 0); font-size: 19px; line-height: 27px;" class="lake-fontsize-14" data-mce-style="font-size: 14px">Le roman que j'ai lu hier a été écrit par Ba Jin.</span></li>
+    </ol>
+  </ol>
+  <ol start="8" lake-indent="0" style="list-style-type: decimal; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">莫妮克生于1977年。18岁时，她到美国学习并在那里定居。</span></li>
+  </ol>
+  <ol lake-indent="1" style="list-style-type: none; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <ol lake-indent="0" style="list-style-type: lower-alpha; margin: 0px; padding-left: 23px;">
+      <li><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">Mo'Nique est </span><span style="text-decoration: line-through;"><span class="lake-fontsize-14" style="color: rgb(47, 84, 235); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">né</span></span><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;"> en 1977. </span><span style="text-decoration: line-through;"><span class="lake-fontsize-14" style="color: rgb(47, 84, 235); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">Quand elle a eu 18</span></span><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">, elle </span><span style="text-decoration: line-through;"><span class="lake-fontsize-14" style="color: rgb(47, 84, 235); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">apprenait</span></span><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;"> aux Etats-Unis et </span><span style="text-decoration: line-through;"><span class="lake-fontsize-14" style="color: rgb(47, 84, 235); font-size: 19px; line-height: 27px;" data-mce-style="font-size: 14px">y habitait</span></span><span class="lake-fontsize-14" data-mce-style="font-size: 14px" style="font-size: 19px; line-height: 27px;">.</span></li>
+      <li><span style="color: rgb(0, 0, 0); font-size: 19px; line-height: 27px;" class="lake-fontsize-14" data-mce-style="font-size: 14px">Monique est </span><span style="color: rgb(245, 34, 45); font-size: 19px; line-height: 27px;" class="lake-fontsize-14" data-mce-style="font-size: 14px">née</span><span style="color: rgb(0, 0, 0); font-size: 19px; line-height: 27px;" class="lake-fontsize-14" data-mce-style="font-size: 14px"> en 1977.</span><span style="color: rgb(245, 34, 45); font-size: 19px; line-height: 27px;" class="lake-fontsize-14" data-mce-style="font-size: 14px"> l'ge de 18 ans</span><span style="color: rgb(0, 0, 0); font-size: 19px; line-height: 27px;" class="lake-fontsize-14" data-mce-style="font-size: 14px">,</span><span style="color: rgb(0, 0, 0); font-size: 19px; line-height: 27px;" class="lake-fontsize-14" data-mce-style="font-size: 14px"> elle est allée aux tats-Unis pour </span><span style="color: rgb(245, 34, 45); font-size: 19px; line-height: 27px;" class="lake-fontsize-14" data-mce-style="font-size: 14px">faire ses études</span><span style="color: rgb(0, 0, 0); font-size: 19px; line-height: 27px;" class="lake-fontsize-14" data-mce-style="font-size: 14px"> et </span><span style="color: rgb(245, 34, 45); font-size: 19px; line-height: 27px;" class="lake-fontsize-14" data-mce-style="font-size: 14px">s'y est installée</span><span style="color: rgb(0, 0, 0); font-size: 19px; line-height: 27px;" class="lake-fontsize-14" data-mce-style="font-size: 14px">.</span></li>
+    </ol>
+  </ol>
+</div>
+        </div>
+
+        
+        <section class="post-copyright">
+            
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>Aurore</span>
+            </p>
+            
+            
+            
+            
+            <p class="copyright-item">
+                <span>Slogan:</span>
+                <span>他山之石，可以攻玉</span>
+            </p>
+            
+
+        </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag：</span>
+                <span class="tag">
+                    
+                    
+                    <a href="/tags/%E8%8B%A6%E9%80%BC%E7%9A%84%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/"> 苦逼的期末复习</a>
+                    
+                    
+                </span><br>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();" target="_blank" rel="noopener">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="/2019/12/12/html%E7%AC%94%E8%AE%B0/">html笔记</a>
+            
+        </section>
+
+
+    </article>
+</div>
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Aurore | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Aurore">
+
+
+
+    <meta name="description" content="Je suis Aurore! ">
+
+
+    <meta name="keywords" content="code">
+
+
+<title>html笔记 | Aurore&#39;s Blog</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Aurore&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Aurore&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">html笔记</h1>
+            
+            <div class="post-meta">
+                
+                Author: <a itemprop="author" rel="author" href="/">Aurore</a>&ensp;
+                
+
+                
+                <span class="post-time">
+                    Date: <a
+                        href="#">December 12, 2019&nbsp;&nbsp;22:31:30</a>
+                </span>&ensp;
+                
+                
+                <span class="post-category">
+                    Category:
+                    
+                    <a href="/categories/%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/">前端笔记</a>
+                    
+                </span>
+                
+            </div>
+            
+        </header>
+
+        <div class="post-content">
+            <!doctype html>
+<div class="lake-content-editor-core lake-engine" data-lake-element="root" data-selection-205830="%7B%22path%22%3A%5B%5B14%2C1%2C0%2C6%5D%2C%5B14%2C1%2C0%2C6%5D%5D%2C%22uuid%22%3A%22205830%22%2C%22active%22%3Atrue%7D">
+  <ol start="1" lake-indent="0" style="list-style-type: decimal; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li>&lt;!DOCTYPE html&gt;</li>
+    <li>&lt;html lang="en"&gt;</li>
+    <li>&lt;html&gt;&lt;/html&gt;：告诉浏览器这是html</li>
+    <li>&lt;head&gt;&lt;/head&gt;：告诉浏览器关于微博页面的信息，该标签及其内容称为首部</li>
+  </ol>
+  <ol lake-indent="1" style="list-style-type: none; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <ol lake-indent="0" style="list-style-type: lower-alpha; margin: 0px; padding-left: 23px;">
+      <li>&lt;title&gt;&lt;/title&gt;：（一定要有）出现在浏览器窗口顶部</li>
+      <li>&lt;style type="text/css"&gt;&lt;/style&gt;：告诉浏览器使用什么类型的样式</li>
+      <li>&lt;meta charset="utf-8"&gt;：在charset属性中指定字符编码</li>
+    </ol>
+  </ol>
+  <ol start="5" lake-indent="0" style="list-style-type: decimal; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li>&lt;body&gt;&lt;/body&gt;：页面主题包含所有内容和结构</li>
+  </ol>
+  <ol lake-indent="1" style="list-style-type: none; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <ol lake-indent="0" style="list-style-type: lower-alpha; margin: 0px; padding-left: 23px;">
+      <li>&lt;a href="...#（id）" title="..."&gt;&lt;/a&gt;：创建超文本链接</li>
+      <li>&lt;img src="..." ale="..."&gt;：html5中必须有alt</li>
+      <li>&lt;p&gt;&lt;/p&gt;（块元素）&nbsp; &nbsp; &lt;q&gt;&lt;/q&gt;&nbsp; &nbsp; &lt;blockquote&gt;&lt;/blockquote&gt;</li>
+      <li>&lt;br&gt;&lt;/br&gt;</li>
+      <li>&lt;em&gt;&lt;/em&gt;&nbsp; &nbsp; &lt;strong&gt;&lt;/strong&gt;</li>
+      <li>&lt;code&gt;&lt;/code&gt;</li>
+      <li>&lt;pre&gt;&lt;/pre&gt;</li>
+    </ol>
+  </ol>
+  <ol start="6" lake-indent="0" style="list-style-type: decimal; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li>http://www.facebook.com/index.html（用来获取资源的协议：//域中一个特定服务器的名字.域名/绝对路径）</li>
+  </ol>
+  <ol lake-indent="1" style="list-style-type: none; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <ol lake-indent="0" style="list-style-type: lower-alpha; margin: 0px; padding-left: 23px;">
+      <li>www.facebook.com：网站名</li>
+      <li>facebook.com：域名（www是域中一个特定服务器的名字）</li>
+      <li>&lt;link type="text/css" rel="stylesheet" href="xxx.css"&gt;</li>
+      <li>link：链入外部信息</li>
+      <li>rel：指定了html文件和所连接文件之间的关系，此处为样式表</li>
+    </ol>
+  </ol>
+  <ol start="7" lake-indent="0" style="list-style-type: decimal; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li>（元素）.类名</li>
+    <li>#id</li>
+    <li>text</li>
+  </ol>
+  <ol lake-indent="1" style="list-style-type: none; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <ol lake-indent="0" style="list-style-type: lower-alpha; margin: 0px; padding-left: 23px;">
+      <li>text-align：对齐块元素中的所有内联元素</li>
+      <li>text-decoration</li>
+      <li>letter-spacing：字母之间设间距</li>
+      <li>line-height：行间距</li>
+      <li>color</li>
+      <li>background-color</li>
+      <li>background-image</li>
+      <li>background-position</li>
+      <li>background-repeat</li>
+      <li>font-family：字体</li>
+      <li>font-weight：文本粗细</li>
+      <li>font-size</li>
+      <li>border：边框</li>
+      <li>border-style</li>
+      <li>list-style：列表外观</li>
+      <li>padding：内边距</li>
+    </ol>
+  </ol>
+  <ol start="10" lake-indent="0" style="list-style-type: decimal; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li><span data-card-type="inline" data-lake-card="mention" class=""><span class="lake-mention-at">@font-face：建立一个字体</span></span><span>，指定一个font-family名</span></li>
+  </ol>
+  <p style="text-indent: 2em; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><span data-card-type="inline" data-lake-card="mention"><span class="lake-mention-at">@font-face</span></span>&nbsp;{</p>
+  <p style="text-indent: 2em; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">font-family: "xxx";</p>
+  <p style="text-indent: 2em; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">src: url("xxx.woff");</p>
+  <p style="text-indent: 2em; padding-left: 2em; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">url("xxx.ttf");</p>
+  <p style="padding-left: 2em; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">}</p>
+  <ol start="11" lake-indent="0" style="list-style-type: decimal; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li>@import</li>
+    <li>@media</li>
+  </ol>
+</div>
+        </div>
+
+        
+        <section class="post-copyright">
+            
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>Aurore</span>
+            </p>
+            
+            
+            
+            
+            <p class="copyright-item">
+                <span>Slogan:</span>
+                <span>他山之石，可以攻玉</span>
+            </p>
+            
+
+        </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag：</span>
+                <span class="tag">
+                    
+                    
+                    <a href="/tags/html/"> html</a>
+                    
+                    <a href="/tags/%E5%89%8D%E7%AB%AF/"> 前端</a>
+                    
+                    
+                </span><br>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();" target="_blank" rel="noopener">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            <a class="prev" rel="prev" href="/2019/12/19/LECON-VINGT-SEPT/">LECON VINGT-SEPT</a>
+            
+            
+            <a class="next" rel="next" href="/2019/12/11/%E4%BB%A5ir%E7%BB%93%E5%B0%BE%E7%9A%84%E7%AC%AC%E4%BA%8C%EF%BC%8C%E4%B8%89%E7%BB%84%E5%8A%A8%E8%AF%8D/">以ir结尾的第二，三组动词</a>
+            
+        </section>
+
+
+    </article>
+</div>
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Aurore | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>
