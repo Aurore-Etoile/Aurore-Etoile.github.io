@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Aurore">
+
+
+
+    <meta name="description" content="Je suis Aurore! ">
+
+
+    <meta name="keywords" content="code">
+
+
+<title>比较级与最高级 | Aurore&#39;s Blog</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Aurore&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Aurore&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+    <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">比较级与最高级</h1>
+            
+            <div class="post-meta">
+                
+                Author: <a itemprop="author" rel="author" href="/">Aurore</a>&ensp;
+                
+
+                
+                <span class="post-time">
+                    Date: <a
+                        href="#">December 21, 2019&nbsp;&nbsp;15:14:21</a>
+                </span>&ensp;
+                
+                
+                <span class="post-category">
+                    Category:
+                    
+                    <a href="/categories/les-notes-de-francais/">les notes de français</a>
+                    
+                </span>
+                
+            </div>
+            
+        </header>
+
+        <div class="post-content">
+            <h1>比较级与最高级</h1>
+<!doctype html>
+<div class="lake-content-editor-core lake-engine" data-lake-element="root" data-selection-205830="%7B%22path%22%3A%5B%5D%2C%22uuid%22%3A%22205830%22%2C%22active%22%3Atrue%7D">
+  <h1 id="y1D5Y" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 28px; line-height: 36px;">形容词的比较级与最高级</h1>
+  <h2 id="z7fFD" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 24px; line-height: 32px;">比较级</h2>
+  <ol start="1" lake-indent="0" style="list-style-type: decimal; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li>较高程度：A+plus+adj.+que+B</li>
+  </ol>
+  <p style="text-indent: 2em; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">Paul est plus grand que Pierre.</p>
+  <ol start="2" lake-indent="0" style="list-style-type: decimal; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li>同等程度：A+aussi+adj.+que+B</li>
+  </ol>
+  <p style="text-indent: 2em; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">Paul est aussi grand que Pierre.</p>
+  <ol start="3" lake-indent="0" style="list-style-type: decimal; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li>较低程度：A+moins+adj.+que+B</li>
+  </ol>
+  <p style="text-indent: 2em; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">Paul est moins grand que Pierre.</p>
+  <p style="text-indent: 2em; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+  <h2 id="DMQ6j" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 24px; line-height: 32px;">最高级</h2>
+  <ol start="1" lake-indent="0" style="list-style-type: decimal; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li>最高程度：le/la/les+plus+adj.+de+比较范围</li>
+  </ol>
+  <p style="text-indent: 2em; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">Il est le plus grand de la classe.</p>
+  <ol start="2" lake-indent="0" style="list-style-type: decimal; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li>最低程度：l<span>e/la/les+moins+adj.+de+比较范围</span></li>
+  </ol>
+  <p style="text-indent: 2em; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">Il est le moins grand de la classe.</p>
+  <ol start="3" lake-indent="0" style="list-style-type: decimal; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li>最高级的位置</li>
+  </ol>
+  <ol lake-indent="1" style="list-style-type: none; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <ol lake-indent="0" style="list-style-type: lower-alpha; margin: 0px; padding-left: 23px;">
+      <li>形容词在名词前：le/la/les+plus/moins+adj.+n.+de+比较范围</li>
+    </ol>
+  </ol>
+  <p style="text-indent: 2em; padding-left: 2em; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">Elle est la plus grande fille de classe.</p>
+  <ol lake-indent="1" style="list-style-type: none; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <ol lake-indent="0" style="list-style-type: lower-alpha; margin: 0px; padding-left: 23px;">
+      <li>形容词在名词后：le/la/les+n.+le/la/les+plus/moins+adj.+de+比较范围</li>
+    </ol>
+  </ol>
+  <p style="padding-left: 2em; text-indent: 2em; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">Je suis l'homme le plus heureux du monde.</p>
+  <p style="padding-left: 2em; text-indent: 2em; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+  <h2 id="ec3cr" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 24px; line-height: 32px;">形容词比较级最高级的特殊形式</h2>
+  <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+  <div data-card-type="block" data-lake-card="table" id="KwspV" class="">
+    <table class="lake-table" style="width: 961px; outline: none; border-collapse: collapse;">
+      <colgroup>
+        <col width="240">
+        <col width="240">
+        <col width="240">
+        <col width="240">
+      </colgroup>
+      <tbody>
+        <tr>
+          <td style="text-align: center; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+          </td>
+          <td style="text-align: center; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">原形</p>
+          </td>
+          <td style="text-align: center; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">比较级</p>
+          </td>
+          <td rowspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); font-weight: 400; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">最高级</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: center; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">单数</p>
+          </td>
+          <td style="text-align: center; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">bon(ne)</p>
+          </td>
+          <td style="text-align: center; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">meilleur(e)</p>
+          </td>
+          <td rowspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); font-weight: 400; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">le(la) meilleir(e)</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: center; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">复数</p>
+          </td>
+          <td style="text-align: center; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">bon(ne)s</p>
+          </td>
+          <td style="text-align: center; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">meilleur(e)s</p>
+          </td>
+          <td rowspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); font-weight: 400; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">les meilleur(e)s</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); font-weight: 400; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">单数</p>
+          </td>
+          <td colspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); font-weight: 400; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">mauvais(e)</p>
+          </td>
+          <td colspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); font-weight: 400; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">pire</p>
+          </td>
+          <td colspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); font-weight: 400; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">le(la) pire</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); font-weight: 400; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">复数</p>
+          </td>
+          <td colspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); font-weight: 400; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">mauvais(es)</p>
+          </td>
+          <td colspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); font-weight: 400; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">pires</p>
+          </td>
+          <td colspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); font-weight: 400; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">les pires</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); font-weight: 400; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">单数</p>
+          </td>
+          <td colspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); font-weight: 400; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">petit(e)</p>
+          </td>
+          <td colspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); font-weight: 400; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">moindre</p>
+          </td>
+          <td colspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); font-weight: 400; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">le(la) moindre</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); font-weight: 400; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">复数</p>
+          </td>
+          <td colspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); font-weight: 400; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">petit(e)s</p>
+          </td>
+          <td colspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); font-weight: 400; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">moindres</p>
+          </td>
+          <td colspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); font-weight: 400; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">les moindre</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+  <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">在大多数情况下，(le) pire和 (le) plus mauvais 可以替换使用。</p>
+  <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">petit表示具体意义时，比较级最高级用(le) plus petit，而表示抽象意义的时候，比较级最高级用(le) moindre。</p>
+  <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">bon，mauvais，petit表示同等程度和较低程度的比较时，仍用一般形式。</p>
+  <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+  <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+  <h1 id="PwGyn" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 28px; line-height: 36px;">副词的比较级与最高级</h1>
+  <h2 id="v5muD" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 24px; line-height: 32px;">比较级</h2>
+  <ol start="1" lake-indent="0" style="list-style-type: decimal; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li>较高程度：<span>A+plus+adv.+que+B</span></li>
+    <li>同等程度：<span>A+aussi+adv.+que+B</span></li>
+    <li>较低程度：<span>A+moins+adv.+que+B</span></li>
+    <li>在否定句中，同级比较可以用aussi...que，也可以用si...que。</li>
+  </ol>
+  <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+  <h2 id="yYWVq" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 24px; line-height: 32px;">最高级</h2>
+  <ol start="1" lake-indent="0" style="list-style-type: decimal; margin: 0px; padding-left: 23px; font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word;">
+    <li>最高程度：le+plus+adv.+de+比较范围</li>
+    <li>最低程度：le+moins+adv.+de+比较范围</li>
+  </ol>
+  <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+  <h2 id="3i8Qc" style="padding: 7px 0px; margin: 0px; font-weight: 700; font-size: 24px; line-height: 32px;">副词比较级最高级的特殊形式</h2>
+  <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+  <div data-card-type="block" data-lake-card="table" id="VypG1" class="">
+    <table class="lake-table" style="width: 1201px; outline: none; border-collapse: collapse;">
+      <colgroup>
+        <col width="240">
+        <col width="240">
+        <col width="240">
+        <col width="240">
+        <col width="240">
+      </colgroup>
+      <tbody>
+        <tr>
+          <td style="text-align: center; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">原形</p>
+          </td>
+          <td style="text-align: center; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">较高比较</p>
+          </td>
+          <td style="text-align: center; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">同级比较</p>
+          </td>
+          <td rowspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); font-weight: 400; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">较低比较</p>
+          </td>
+          <td rowspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); font-weight: 400; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">最高级</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: center; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">bien</p>
+          </td>
+          <td style="text-align: center; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">mieux</p>
+          </td>
+          <td style="text-align: center; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">aussi bien</p>
+          </td>
+          <td rowspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); font-weight: 400; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">moins bien</p>
+          </td>
+          <td rowspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); font-weight: 400; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">le mieux</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: center; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">mal</p>
+          </td>
+          <td style="text-align: center; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">plus mal/pis</p>
+          </td>
+          <td style="text-align: center; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">aussi mal</p>
+          </td>
+          <td rowspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); font-weight: 400; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+          </td>
+          <td rowspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); font-weight: 400; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">le plus mal/le pis</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); font-weight: 400; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">beaucoup</p>
+          </td>
+          <td colspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); font-weight: 400; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">plus</p>
+          </td>
+          <td colspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); font-weight: 400; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">autant</p>
+          </td>
+          <td colspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); font-weight: 400; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+          </td>
+          <td colspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); font-weight: 400; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">le plus</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); font-weight: 400; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">peu</p>
+          </td>
+          <td colspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); font-weight: 400; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">moins</p>
+          </td>
+          <td colspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); font-weight: 400; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">aussi peu</p>
+          </td>
+          <td colspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); font-weight: 400; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+          </td>
+          <td colspan="1" style="text-align: center; vertical-align: top; background-color: rgb(255, 255, 255); color: rgb(38, 38, 38); font-weight: 400; min-width: 90px; font-size: 14px; white-space: normal; overflow-wrap: break-word; border: 1px solid rgb(217, 217, 217); padding: 4px 8px; cursor: default;">
+            <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;">le moins</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size: 14px; color: rgb(38, 38, 38); line-height: 24px; letter-spacing: 0.05em; outline-style: none; overflow-wrap: break-word; margin: 0px;"><br></p>
+</div>
+        </div>
+
+        
+        <section class="post-copyright">
+            
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>Aurore</span>
+            </p>
+            
+            
+            
+            
+            <p class="copyright-item">
+                <span>Slogan:</span>
+                <span>他山之石，可以攻玉</span>
+            </p>
+            
+
+        </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag：</span>
+                <span class="tag">
+                    
+                    
+                    <a href="/tags/J-aime-le-francais-le-francais-m-aime/"> J'aime le français, le français m'aime</a>
+                    
+                    <a href="/tags/%E8%8B%A6%E9%80%BC%E7%9A%84%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/"> 苦逼的期末复习</a>
+                    
+                    <a href="/tags/%E8%87%AA%E5%8F%A4%E6%9C%9F%E6%9C%AB%E5%A4%9A%E6%8C%82%E9%80%BC/"> 自古期末多挂逼</a>
+                    
+                    
+                </span><br>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();" target="_blank" rel="noopener">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            <a class="prev" rel="prev" href="/2019/12/21/tout%E7%9A%84%E7%94%A8%E6%B3%95/">tout的用法</a>
+            
+            
+            <a class="next" rel="next" href="/2019/12/21/vue%E7%AC%94%E8%AE%B0-2/">vue笔记 2</a>
+            
+        </section>
+
+
+    </article>
+</div>
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Aurore | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>
