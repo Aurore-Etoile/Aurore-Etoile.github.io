@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Aurore">
+
+
+
+    <meta name="description" content="Je suis Aurore! ">
+
+
+    <meta name="keywords" content="code">
+
+
+<title>英语口语笔记 1 | Aurore&#39;s Blog</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Aurore&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Aurore&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+    <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">英语口语笔记 1</h1>
+            
+            <div class="post-meta">
+                
+                Author: <a itemprop="author" rel="author" href="/">Aurore</a>&ensp;
+                
+
+                
+                <span class="post-time">
+                    Date: <a
+                        href="#">February 5, 2020&nbsp;&nbsp;22:10:39</a>
+                </span>&ensp;
+                
+                
+                <span class="post-category">
+                    Category:
+                    
+                    <a href="/categories/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">英语学习笔记</a>
+                    
+                </span>
+                
+            </div>
+            
+        </header>
+
+        <div class="post-content">
+            <p><a name="10Qll"></a></p>
+<h1 id="真人秀"><a href="#真人秀" class="headerlink" title="真人秀"></a>真人秀</h1><p>hitshows    热播剧<br />rearity show    真人秀<br />Rearity show is a big hit!    真人秀很红！<br />a big fan of    是…的粉丝<br />I’m a big fan of this hitshow!<br />fanboy/fangirl    脑残粉<br />talent show    选秀<br />I’m not that big on it!    我对这个无感！<br />TV series    电视剧<br />It’s really not to my taste.    这真不是我的菜。</p>
+<p><a name="HKzjB"></a></p>
+<h1 id="看电影"><a href="#看电影" class="headerlink" title="看电影"></a>看电影</h1><p>Would you like to see a film?<br />Which film would you like to see?<br />Which showtime would you like to choose?    你想看哪个场次？<br />Which seat would you like to take?    你想选哪个位子？<br />Would you like some popcorn?</p>
+<p><a name="0MHMm"></a></p>
+<h1 id="下午茶"><a href="#下午茶" class="headerlink" title="下午茶"></a>下午茶</h1><p>afternoon tea<br />low tea<br />What are you in the mood for?    你想吃什么？<br />I’m in the mood for…    我想吃……<br />This scone doesn’t agree with me.    我不爱吃司康饼。</p>
+<p><a name="u1wwr"></a></p>
+<h1 id="西餐"><a href="#西餐" class="headerlink" title="西餐"></a>西餐</h1><p>appetizer    前菜<br />soup    汤    <br />entree    主菜<br />dessert    甜点<br />drink    饮料<br />Excuse me, we’re ready to order.<br />I’ll have this, this…<br />How do you like your steak?    牛排你要几分熟？<br />Medium.<br />Medium well.<br />Well done.<br />Check please.    买单。<br />It’s on me./It’s my treat.    我请客。<br />Let’s go dutch!</p>
+<p><a name="VXzoF"></a></p>
+<h1 id="砍价"><a href="#砍价" class="headerlink" title="砍价"></a>砍价</h1><p>How much do you want for this?<br />Come on. That’s steep, isn’t it?<br />I can get this much cheaper at other places!<br />What’s the lowest price that you can go?<br />It’s still out of my price range.</p>
+<p><a name="kX0OR"></a></p>
+<h1 id="扫货季"><a href="#扫货季" class="headerlink" title="扫货季"></a>扫货季</h1><p>It’s such a rip-off!    抢钱啊！<br />Are you ripping me off?    你宰我吧？<br />good deal    便宜货<br />bargain hunt    淘便宜货<br />flash sale    限时折扣<br />doorbuster sale    限量限低价抢购<br />clearance sale    清仓大甩卖<br />discount    折扣</p>
+<p><a name="mMjlk"></a></p>
+<h1 id="放鸽子"><a href="#放鸽子" class="headerlink" title="放鸽子"></a>放鸽子</h1><p>stand sb up    <br />I’m terribly sorry for…<br />It’s all my fault.<br />Please give me a chance, I’ll make it up to you.</p>
+<p><a name="uYX5B"></a></p>
+<h1 id="约会"><a href="#约会" class="headerlink" title="约会"></a>约会</h1><p>Let’s grab a drink or a bite this week?<br />What’s your schedule like?<br />… is good for me/works fine.<br />Let’s say … maybe?</p>
+<p><a name="0SHul"></a></p>
+<h1 id="夸赞"><a href="#夸赞" class="headerlink" title="夸赞"></a>夸赞</h1><p>small talk    闲聊<br />You look so gorgeous tonight.<br />You can say that again.    你说得对。<br />You said it.<br />There you go.<br />You took the words right out of my mouth.</p>
+<p><a name="9fKO6"></a></p>
+<h1 id="表白"><a href="#表白" class="headerlink" title="表白"></a>表白</h1><p>I have a crush on you.<br />You had me from hello.<br />You are the one for me.<br />We’re made for each other.<br />I’m head over heels for you.</p>
+
+        </div>
+
+        
+        <section class="post-copyright">
+            
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>Aurore</span>
+            </p>
+            
+            
+            
+            
+            <p class="copyright-item">
+                <span>Slogan:</span>
+                <span>他山之石，可以攻玉</span>
+            </p>
+            
+
+        </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag：</span>
+                <span class="tag">
+                    
+                    
+                    <a href="/tags/%E8%8B%B1%E8%AF%AD%E5%8F%A3%E8%AF%AD/"> 英语口语</a>
+                    
+                    
+                </span><br>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();" target="_blank" rel="noopener">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="/2019/12/21/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/">排序算法</a>
+            
+        </section>
+
+
+    </article>
+</div>
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Aurore | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>
